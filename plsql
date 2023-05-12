@@ -129,3 +129,15 @@ BEGIN
 			dbms_output.line('Value of cntr : ' || cntr);
 		END LOOP
 END
+
+
+--REVERSE ORDER
+
+DECLARE
+	cntr number := 10;
+BEGIN
+	FOR cntr IN REVERSE 10..20
+		LOOP
+			dbms_output.line('Value of cntr : ' || cntr);
+		END LOOP
+END
